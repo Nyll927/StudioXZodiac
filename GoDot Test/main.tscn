@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://djpic7gyv3bsc"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_eb587"]
+[ext_resource type="PackedScene" uid="uid://dkglaeakhitbt" path="res://BG.tscn" id="2_xdoki"]
+
+[sub_resource type="Theme" id="Theme_tv1eg"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_eb587")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 443.0
+offset_top = 332.0
+offset_right = 673.0
+offset_bottom = 431.0
+tooltip_text = "Begin your adventure!"
+theme = SubResource("Theme_tv1eg")
+text = "Start"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 444.0
+offset_top = 443.0
+offset_right = 674.0
+offset_bottom = 542.0
+tooltip_text = "Quit to desktop."
+theme = SubResource("Theme_tv1eg")
+text = "Quit"
+
+[node name="BG" parent="." instance=ExtResource("2_xdoki")]
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
