@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://go3u125psoq6"
+path="res://.godot/imported/platformer_level03_loop.ogg-210e0b30f05358dc773da1db25e7435f.oggvorbisstr"
+
+[deps]
+
+source_file="res://SunnyLand/Music by Pascal Belisle/Music by Pascal Belisle/platformer_level03_loop.ogg"
+dest_files=["res://.godot/imported/platformer_level03_loop.ogg-210e0b30f05358dc773da1db25e7435f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
